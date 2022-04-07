@@ -30,7 +30,7 @@ pipeline{
      stage('Deploy to artifactory'){
         steps{
         rtUpload(
-         serverId : 'ARTIFACTORY_SERVER',
+         serverId : 'maven-passport',
          spec :'''{
            "files" :[
            {
