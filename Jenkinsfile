@@ -12,7 +12,7 @@ pipeline{
           }
       }
       
-     stage("Build & SonarQube analysis") {
+    /* stage("Build & SonarQube analysis") {
             agent any
             steps {
               withSonarQubeEnv('SonarPassport') {
@@ -25,7 +25,7 @@ pipeline{
             steps {
                 waitForQualityGate abortPipeline: true
             }
-        }
+        } */
     
      stage('Deploy to artifactory'){
         steps{
